@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>javascript-Basic-Es6</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./icons/download.png" />
+  </head>
+  <body>
+    <div
+      class="grid grid-cols-1 gap-4 mt-8 sm:mt-4 lg:p-12 sm:p-4 max-w-7xl mx-auto w-4/5 h-11/12 lg:h-auto"
+    >
+      <h1
+        class="text-2xl lg:text-6xl md:text-4xl font-bold text-center underline mb-8"
+      >
+        Javascript Basic Es6
+      </h1>
+      <!-- p-1 -->
+      <!-- The button to open modal -->
+      <label for="my-modal" class="btn">
+        How to declare an arrow function?
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1.........<br>
+           const add6 = (first + second) => (first + second);<br>
+           const result = add6(10, 20);<br>
+           console.log(result);<br>
+           2.........<br>
+           const addAll = (a, b, c, d, e, f, g, h, i, j, k, l)=> (a + b + c + d + e + f + g + h + i + j + k + l);<br>
+           const result = addAll(10, 20, 30, 3,5,7,4,3,5,6,3,4);<br>
+           console.log(result);<br>
+           3...one parameter simple version....<br>
+           const fiveTimes = num => num * 5;<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- p-2 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-1" class="btn">
+        How to declare multiple line arrow function? 
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-1" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1..............<br>
+           const doMath = (x, y, z) =><br> {
+            const firstSum = (x + y);<br>
+            const secondSum = (y + z);<br>
+            const multipleSum = firstSum * secondSum;<br>
+            const result = multipleSum / 2;<br>
+            return result;
+           }<br>
+           2..................<br>
+           const doubleIt = x => x*2;<br>
+           3............<br>
+           salary = 550;<br>
+           tax = 0.24;<br>
+           bonus = 100;<br>
+           const calculateSalary = (salary, tax, bonus) => salary - salary*tax+bonus;<br>
+           console.log(calculateSalary);<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-1" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- p-3 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-2" class="btn">
+       Spread Operations.
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-2" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1................<br>
+            let numbers = [3, 4, 5];<br>
+            let allNumbers = [1, 2, ...numbers, 6,7];<br>
+            console.log(allNumbers);<br>
+            2.................<br>
+            const ages = [1,2,3,4,5];<br>
+            const newAges = [...ages, 66,44,22];<br>
+            console.log(newAges);<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-2" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- p-4 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-3" class="btn">
+        array destructuring.
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1......
+            const [first, second] = [1, 2];<br>
+            console.log(first, second);<br>
+            2.........<br>
+            const ['nayoks'] = ['sakib','bappy'];<br>
+            const ['king', 'lost']= ['nayoks'];<br>
+            console.log(king);<br>
+            3.............<br>
+            const {x, y, z,...c} = {x:45, y:45, z:45, name:sakib-al-hasan, salary:45000};<br>
+            const [a, b,...c] = [12,78,65,89,34];<br>
+            
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-3" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+      <!-- p-5 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-4" class="btn">
+        How can your get your full name?<br>
+        how can you write multiline in Es6?
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1..............<br>
+           function fullName(first , last ='chowdhury')<br> {
+            const name = first + ' ' + last;<br> 
+            return(name);
+           }<br> 
+           const name = fullName('mahia');<br> 
+           console.log(name);<br> 
+           2...........<br>
+           const multiline = `this is firstline<br>
+           this is secondline<br>
+           this is thirdline<br>
+           this is fourthline`;<br>
+           console.log(multiline);<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-4" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+      <!-- p-6 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-5" class="btn">
+        How can you type tamplateString?
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            const a = 20;<br>
+            const b = 30;<br>
+            const summary = `sum of ${a} and ${b} is: $(a + b)`;<br>
+            console.log(summary);<br>
+
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-5" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+      <!-- p-7 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-6" class="btn">
+        How can you find (array of objects/objects of array),nested object,optional chaining?
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1.............<br>
+            const users =[{id:1, name:'abul', job:doctor}];<br>
+            console.log(users[0].name);<br>
+            2..............<br>
+            const data = {<br>
+              count= 5000;<br>
+              data = [<br>
+              {id:1, name:'abul', job:doctor};<br>
+              {id:2, name:'dabul', job:engineer};<br>
+              ];
+            }<br>
+            console.log(data.data[1].job);<br>
+            3...............<br>
+            const user = {<br>
+              id: 1,<br>
+              name:'abul',<br>
+              address:{<br>
+                street:{<br>
+                  first:'kochukhet lane';<br>
+                  second:"mohammadpur";
+
+                }<br>
+
+              }<br>
+              city:'dhaka';
+            }<br>
+            console.log(user.address.street?.second);<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-6" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+      <!-- p-8 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-7" class="btn">
+        Map strings array, array of objects and forEach object.
+      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-7" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+          1.............<br>
+          const numbers = [12, 23, 45, 67];<br>
+          const half = numbers.map (n => n/2);<br>
+          const triples = numbers.map (n => n/3);<br>
+          2..................<br> 
+          const friends = ['tom hacks', 'tom paddy', 'tomas alva edison'];
+          const friendsLetter = friends.map (friends.map (friend => friend[0]));<br>
+          const nameLength = friends.map (friends.map (friend => friend.length));<br>
+          3................<br>
+          const products = [<br>
+          {id:1, name:'abul', price:67000};<br>
+          {id:2, name:'dabul', price:70000};<br>
+          {id:3, name:'babul', price:89000};
+          ];<br>
+          const productsName = products.map (product => product.name);<br>
+          const productsPrice = products.map (product => product.price);<br>
+          products.forEach (product => console.log(product));<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-7" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+      <!-- p-9 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-8" class="btn">
+      Implement filter,find on an object of array.      </label>
+
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-8" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1.................<br>
+            const numbers = [12,34,23,43,56,67,44,33,56,33,4,5];<br>
+            const bigNums = numbers.filter(number => number > 10);<br>
+            const tiny = numbers.filter(number => number < 10 );<br>
+            const even = numbers.filter(number => number % 2 === 0);<br>
+            const odd = numbers.filter(number => number % 2 !== 0);<br>
+            const five = numbers.find(number => number % 5 === 0);<br>
+            2.................<br>
+            const products = [<br>
+            {id:1, name:'abul', price:67000};<br>
+            {id:2, name:'dabul', price:70000};<br>
+            {id:3, name:'babul', price:89000};
+            ];<br>
+            const cheap = products.find (product => product < 70000);<br>
+            const high =  products.find(product => product > 10000);<br>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-8" class="btn">Got It!</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- p-10 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-9" class="btn">
+    Implement Reduce function and dot notation.
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-9" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          1...............<br>
+          const numbers =[1, 2,3,5,6,8,9,10,11,12,12];<br>
+          const total = numbers.reduce((previous, current)=>{<br>
+            console.log(previous, current);<br>
+            return (previous + current)
+          }, 0);<br>
+          2..dot notation...............<br>
+          const student = {<br>
+            name: 'Student',<br>
+            age: 24,<br>
+            subject: {<br>
+              math: 98,<br>
+              physics: 100,
+            }<br>
+            const subject ='math';<br>'
+            const marks = student.subject[math];<br>
+
+          }
+
+         </p>
+         <div class="modal-action">
+           <label for="my-modal-9" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-11 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-10" class="btn">
+        how can you slice a variable from 2nd element to last one?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-10" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          var numbers= [23, 45, 67, 45, 67, 45, 67, 45, 67, 45, 67, 45];<br>
+          numbers.slice(3,11);<br>
+          console.log(numbers);
+         </p>
+         <div class="modal-action">
+           <label for="my-modal-10" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-12 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-11" class="btn">
+        how can you incluide a variable name part?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-11" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          var name = 'Ariana is singing now';
+          name.includes('Ariana');
+          console.log(name);
+          name.substring(0,8);
+          console.log(name);
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-11" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-13 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-12" class="btn">
+        var items = ['bottole','water','mouse','sunglass','food']
+        get down the items break point?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-12" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          var items = ['bottole','water','mouse','sunglass','food'];<br>
+          for(var i = 0; i < items.length; i++)<br>{
+            var item = items[i];<br>
+            if(item == 'mouse')<br>{
+              break;
+            }<br>
+            console.log(item);
+           }
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-12" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-14 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-13" class="btn">
+        var numbers = [11, 45, 56, 78, 90,100]
+        get down the items continue point?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-13" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          for(var i = 0; i < numbers.length; i++)<br>{
+            var number = numbers[i];<br>
+            if(number > 50)<br>{
+              continue;
+            }<br>
+            console.log(number);
+          }
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-13" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-15 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-14" class="btn">
+        while loop in reverse way in 10 to 1?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-14" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+         var num = 10;<br>
+         while (num >= 1)<br>{
+          console.log(num);<br>
+          num--;
+         }
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-14" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-16 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-15" class="btn">
+        for loop in 1 to 10, and the reverse way 10 to 1?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-15" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          for(var i = 0; i <= 10; i++)<br>{
+            console.log(i);
+           }<br>
+           for(var i = 0; i > 1; i++)<br>{
+            console.log(i);
+           }
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-15" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-17 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-16" class="btn">
+        you are given with the triangle of sides 9, 8, 9.write a program whether to check is it isoceles or not?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-16" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          side1 = 9;<br>
+        side2 = 7;<br>
+          side3 = 9;<br>
+
+          if(side1 == side3 || side1 == side2 || side2 == side3)<br>{
+            console.log('isoceles');
+          }<br>
+          else{
+            console.log('isoceles not');
+          }
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-16" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-18 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-17" class="btn">
+       how can you call a function?
+     </label>
+
+     <!-- Put this part before </body> tag -->
+     <input type="checkbox" id="my-modal-17" class="modal-toggle" />
+     <div class="modal">
+       <div class="modal-box">
+         <p class="py-4 px-4">
+          function sum(a, b, c, d, e)<br> {
+            console.log(a,b,c,d,e);<br>
+            var sum = (a + b + c + d + e);<br>
+            console.log(sum);
+          }<br>
+          sum= (13, 43, 13, 56,34);<br>
+          2.............................<br>
+          function add(num1 , num2)<br>{
+            console.log("going to add" num1,num2);
+          }<br>
+          add = (34, 87);
+
+
+          </p>
+         <div class="modal-action">
+           <label for="my-modal-17" class="btn">Got It!</label>
+         </div>
+        </div>
+     </div>
+
+     <!-- p-19 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-18" class="btn">
+       per peice singara price 10 tk.if you have 200 tk ,how many singaras will you bring?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-18" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function bringSingara(money)<br> {
+            var singaraPrice = 10;<br>
+            var quantity = money/singaraPrice;<br>
+            return quantity;
+           }<br>
+           var singaras = bringSingara(200);<br>
+           console.log('eating singara:'singaras);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-18" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+      
+      <!-- p-20 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-19" class="btn">
+       you get assighnment marks like 56, 57, 60.what is the average marks below this?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-19" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function average = (assighnment1, assighnment2, assighnment3)<br>{
+            const total = (assighnment1+assighnment2+assighnment3);<br>
+            const average = total/3;<br>
+            return average;
+           }<br>
+           const assighnment1 = 56;<br>
+           const assighnment2 = 57;<br>
+           const assighnment3 = 60;<br>
+
+           var myAverage =getAverage(assighnment1, assighnment2, assighnment3);<br>
+           console.log('my average is so far:', myAverage)
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-19" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+      
+      <!-- p-21 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-20" class="btn">
+       How can you get a object property shopping cart using for in loop?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-20" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           var shoppingCart =<br> {
+            books :3,<br>
+            mouse :34,<br>
+            pen :8,<br>
+            pencil :39,<br>
+            rider :35,<br>
+            penbooks :39
+           }<br>
+           for (var propertyName in shoppingCart)<br> {
+            const value = shoppingCart[propertyName];<br>
+            console.log(shoppingCart,value);
+           }
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-20" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-22 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-21" class="btn">
+       if you have many colours ,how can you use switch function to debug it?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-21" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+          switch(colour)<br>{
+            case 'black':
+            console.log('you are my black friend');<br>
+            break;<br>
+            case 'white':
+            console.log('you are my white friend');<br>
+            break;<br>
+            case 'yellow':
+            console.log('you are my yellow friend');<br>
+            break;<br>
+            default:
+            you are my green friend;
+          } 
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-21" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-23 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-22" class="btn">
+       write a function of make_avg() which will take an three integers and return the avarage those values.
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-22" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           const array = [1, 2, 3, 4, 5];<br>
+           function makeAvg(array)<br>{
+            let total = 0;<br>
+            for (let element of array)<br>{
+              total += element
+            }<br>
+            let avg = total/array.length;<br>
+            return avg
+           }<br>
+           const avgMark = makeAvg(array);<br>
+           console.log(avgMark);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-22" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-24-->
+      <!-- The button to open modal -->
+      <label for="my-modal-23" class="btn">
+        ১. leapYear() নামে ফাংশন লিখো এবং নেক্সট ইয়ার অর্থাৎ ২০২৩ কি leap year নাকি সেটা চেক করো। Leap year হলে ফাংশন true রিটার্ন করবে আর leap year না হলে false রিটার্ন করবে।
+
+
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-23" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            var year = 2023;<br>
+            var LeapYear = year % 4;<br>
+            
+            if (LeapYear==0)<br> {
+                alert("This is Leap Year");
+            }<br> else<br> {
+                alert("This is not leap year");
+            }
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-23" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+
+       <!-- p-25 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-24" class="btn">
+        ২. তোমার বয়স কি odd নাকি even সংখ্যা সেটা চেক কর একটা ফাংশন দিয়ে। সেই ফাংশনকে কোন সংখ্যা প্যারামিটার হিসেবে দিলে, সেই সংখ্যা Even হলে ফাংশন true রিটার্ন করবে আর Odd হলে false রিটার্ন করবে।
+
+
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-24" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           const isEven(number){<br>
+            const remainder = number % 2 ; 
+           if (remainder === 0)<br>{
+            console.log("the number is even");
+           }<br>
+           else<br>{
+            console.log("the number is odd");
+           }
+           }<br>
+          const myNumberIsEven = isEven(303);<br>
+          console.log(myNumberIsEven);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-24" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p- -26->
+      <!- The button to open modal -->
+      <label for="my-modal-25" class="btn">
+        ৩. এমন একটা ফ্যাংশনা লিখো যেটাকে তুমি ঘন্টাকে ইনপুট প্যারামিটার হিসেবে দিবে। আর সে সেই ঘন্টাকে মিনিটে কনভার্ট করে মিনিট রিটার্ন করবে।
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-25" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function timeConvert(n)<br>{
+              var num = n;<br>
+              var hours = (num/60);<br>
+              var rhours = Math.floor(hours);<br>
+              var minutes = (hours - rhours)*60;<br>
+              var rMinutes = Math.round(minutes);<br>
+              return num + "minutes =" + rhours + " hours (s)" + rMinutes + " minutes (s)";
+             }<br>
+             console.log(timeConvert(200));
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-25" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-27 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-26" class="btn">
+       Feet to Inch in convert?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-26" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function toFeetAndInches (inch)<br>{
+            return (parseInt(inches/12) + ' ' + Math.round(inches%12,1)+"'")
+           }<br>
+           console.log(toFeetAndInches(69));
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-26" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-28 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-27" class="btn">
+       convert Kilometers to Miles?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-27" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function convert_distance(miles)<br>{
+            km = miles * 1.6<br>
+            return(str(km * 2))}<br>
+        console.log (convert_distance(55));
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-27" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-29 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-28" class="btn">
+       is your year 1933, her year 1962 is leap year?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-28" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function isLeapYear(year)<br> {
+            const leapYear = year % 4;<br>
+            if (leapYear === 0)<br>{
+              return true;
+            }<br>
+            else<br>{
+              return false;
+              }<br>
+           }<br>
+           const isMyYearLeapYear = isLeapYear(1933);<br>
+           console.log('your year is:' isMyYearLeapYear);<br>
+
+           const isHerYearLeapYear = isLeapYear(1962);<br>
+           console.log('Her year is:' isMyYearLeapYear);
+
+           
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-28" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+ 
+     <!-- p-30 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-29" class="btn">
+        Write a function findOddSum() that will take the array [5, 7, 8, 10, 45, 30]
+        as the input parameter and will return the sum of the odd numbers.
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-29" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function getSumOfAnArray(numbers)<br>{
+            let sum = 0;<br>
+            for(let i = 0; i < numbers.length; i++)<br>{
+              const index = i;<br>
+              const element = numbers[index];<br>
+              sum = sum + element;<br>
+              console.log(index, element, sum);
+            }<br>
+            return sum;
+           }<br>
+           const myNumbers = [5, 7, 8, 10, 45, 30];<br>
+           getSumOfAnArray(myNumbers);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-29" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-31 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-30" class="btn">
+        Write a function findOddNumbers() that will take the array [56, 74, 80, 10, 45, 30, 87, 43, 32]
+        as the input parameter and will return the odd numbers in an array.and get the sum od odd numbers.
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-30" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function getOddNumbersOfAnArray (numbers)<br> {
+            const oddNumbers = [];<br>
+            for(let i = 0; i < numbers.length; i++)<br> {
+              const index = i;<br>
+              const element = numbers[index];<br>
+              if(element % 2 === 1)<br> {
+                console.log(index, element);<br>
+                oddNumbers.push(element);
+              }
+            }<br>
+            return oddNumbers;
+           }<br>
+           const myNumbers = [56, 74, 80, 10, 45, 30, 87, 43, 32];<br>
+           const oddNumbers = getOddNumbersOfAnArray(myNumbers);<br>
+           console.log(oddNumbers);<br>
+
+           const oddNumberSum = getOddNumbersOfAnArray(oddNumbers);<br>
+           console.log('get odd number sum:' oddNumberSum);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-30" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-32 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-31" class="btn">
+       calculate factorial of a number using for loop (sum, multiplication)
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-31" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            <!-- sum --><br>
+           function sumOfNumbers (number)<br>{
+            let sum = 0;<br>
+            for(let i = 0; i < number; i++)<br>{
+              sum = sum + i;<br>
+              console.log(sum, i);
+            }<br>
+            return sum;
+           }<br>
+           
+           <!-- multiplication --><br>
+           function factorial (number)<br>{
+            let result = 1;<br>
+            for(let = 1; i <= number; i++)<br>{
+              result = result * i;
+            }<br>
+            return result;
+           }<br>
+           const result = factorial(9);<br>
+           console.log (result);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-31" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-33 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-32" class="btn">
+        calculate factorial of a number using for loop decrementing loop?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-32" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function factorial (number)<br>{
+            let result = 1;<br>
+            for (let i = 0; i >= number; i--)<br> {
+              result = result + i;<br>
+              console.log(result);
+            }<br>
+            return result;
+           }<br>
+           const fact = factorial(9);<br>
+           console.log('your factorial:' fact);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-32" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-34 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-33" class="btn">
+        তোমাকে ফাংশনের ইনপুট হিসেবে সেলসিয়াস দিবে। তুমি ক্যালকুলেশন করে তাপমাত্রা ফারেনহাইট এ কনভার্ট করে সেটার আউটপুট রিটার্ন করবে
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-33" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function toCelsius(f)<br> {
+              return (5/9) * (f-32);
+            }<br>
+            const f =toCelsius(77);<br>
+            console.log("The temperature is " + f + " Celsius");
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-33" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-35 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-34" class="btn">
+        কেউ ১০০ এর মধ্যে কত মার্ক্স্ পেয়েছে সেটা তোমাকে বলে দিবে। তুমি একটা ফাংশন দিয়ে বলে দিবে সে এ+ পাবে নাকি অন্য কোন গ্রেড পাবে।  
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-34" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+          function check(num)<br>{
+            if (num>100)<br>{
+              console.log(" You got A+ grade");
+              }<br>
+            else if(num >= 80)<br>{
+              console.log(" You got A grade");
+              }<br>
+            else if ( num >=60)<br>{
+              console.log(" You got B grade");
+              }<br>
+            else if ( num >=40)<br>{
+              console.log(" You got C grade");
+              }<br>
+            else if ( num < 40)<br>{
+              console.log(" You Failed in this exam");
+              }<br>
+          return 0;
+          }<br>
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-34" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-36 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-35" class="btn">
+        how to use Math, pow, abs, round, ceil, floor, random?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-35" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1...power....<br>
+           const result = Math.pow(3, 8);<br>
+           console.log(result);<br>
+            2......absolute........<br>
+            let a = 25;<br>
+            let b = 100;<br>
+            const gap = Math.abs(a - b);<br>
+            console.log(gap);<br>
+            3.....Math, ceil, floor......<br>
+            const result1 = Math.round(2.00002);<br>
+            const result2 = Math.ceil(2.45667);<br>
+            const result3 = Math.floor(456.876);<br>
+            console.log(result1);<br>
+            <br>
+            4....Math round in for loop.......<br>
+            for(let i = 0; i < 20; i++)<br> {
+              const random = Math.round(Math.random() *8);<br>
+            console.log(random);
+            }<br>
+            <br>
+            2....Math perspective..........<br>
+            -5    > Math.abs > 5;<br>
+            5.005 > Math.ceil > 6;<br>
+            5.999 > Math.floor > 5;<br>
+            5.999 > Math.round > 6;<br>
+            5.299 > Math.round > 5;<br>
+                  > Math.random > 0.876544;
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-35" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-37 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-36" class="btn">
+        একটা ফাংশন লিখো। সেই ফাংশনের মধ্যে ইনপুট হিসেবে একটা array নিবে। সেই array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হবে ইনপুট নেয়া array এর মধ্যে যতগুলা সংখ্যা আছে। সেই সংখ্যা গুলার গড় বের করবে। তারপর সেই গড় ফাংশনের রিটার্ন হিসেবে দিয়ে দিবে। একটু চিন্তা করো। বুঝার চেষ্টা করো। ট্রাই করো। দেখো পারো কিনা। 
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-36" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-36" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-38 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-37" class="btn">
+        একটা ফাংশন লিখো। যেটা ইনপুট প্যারামিটার হিসেবে একটা আয়তক্ষেত্রের দৈর্ঘ্য আর উচ্চতাকে নিবে। তারপর সেই আয়তক্ষেত্র এর area (আয়তন) কে রেজাল্ট হিসেবে রিটার্ন করবে। 
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-37" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-37" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-39 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-38" class="btn">
+        কোন একটা array এর মধ্যে অনেকগুলা সংখ্যা আছে। সেই সংখ্যাগুলো থেকে second largest সংখ্যা বের করার একটা প্রোগ্রাম লিখো। দরকার হলে গুগলে সার্চ দাও। তারপর সার্চ রেজাল্ট দেখে বুঝে বুঝে করার চেষ্টা করো। 
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-38" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-38" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-40 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-39" class="btn">
+       write a function which is foo called foo(),and write a function which is bar called bar(),call function bar() in the foo() function after printing.what will be the output.
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-39" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function bar(){
+              console.log('bar');
+            }
+           function foo(){
+            console.log('foo');
+            bar();
+           }
+           foo();
+           </p>
+           <div class="modal-action">
+            <label for="my-modal-39" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-41 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-40" class="btn">
+       How to use split, slice, substr, substring, concat, join?
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-40" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            1.......split......<br>
+           const lyrics = "tumi bondhu kala pakhi, ami jano ki.";<br>
+           const parts = lyrics.split(" ");<br>
+           console.log(parts);<br>
+           2........slice...................<br>
+           const partial = lyrics.slice(2,9);<br>
+           console.log(partial);<br>
+           3.....substring........<br>
+           const partial2 = lyrics.substring(2,9);<br>
+           console.log(partial2);<br>
+           4.....join.........<br>
+           const lines = "tumi bondhu kala pakhi, Ami jano ki.";<br>
+           const join2 = lyrics.join('.');<br>
+           console.log(join2);
+          
+
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-40" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+       <!-- p-42 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-41" class="btn">
+        How to use temp,swap variable, destructuring?
+       </label>
+  
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-41" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box">
+           <p class="py-4 px-4">
+             1....temp.......<br>
+             let first = 4;<br>
+             let second = 9;<br>
+             console.log(first, second);<br>
+             const temp = first;<br>
+             first = second;<br>
+             second = temp;<br>
+             console.log(first, second);<br><br>
+             2.......destructuring.....<br>
+             [first, second] = [second, first];<br>
+             console.log(first, second);
+            </p>
+           <div class="modal-action">
+             <label for="my-modal-41" class="btn">Got It!</label>
+           </div>
+          </div>
+       </div>
+
+        <!-- p-43 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-42" class="btn">
+        Jim, dela  and chinku are the toppest student in the class.this year who will get the cake by ranking number.
+       </label>
+  
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-42" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box">
+           <p class="py-4 px-4">
+             const jim = 66;<br>
+             const dela = 97;<br>
+             const chinku = 87;<br>
+            if(jim > dela && jim > chinku)<br>{
+              console.log("Jim will get the cake");
+            }<br>
+            else if(dela> jim && dela > chinku)<br>{
+              console.log("dela will get the cake");
+            }<br>
+            else {<br>
+              console.log("chinku will get the cake");
+            }<br>
+            2.....another way to do this.......<br>
+            const largeNum = Math.max(66, 97, 87);<br>
+            console.log(largeNum);
+            </p>
+           <div class="modal-action">
+             <label for="my-modal-42" class="btn">Got It!</label>
+           </div>
+          </div>
+       </div>
+
+        <!-- p-44 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-43" class="btn">
+        Tom and his friend is attend a competition 'who is tallest'.As per the name the person who is heighest height will be the winner.can you find who is the tallest person among them.
+       </label>
+  
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-43" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box">
+           <p class="py-4 px-4">
+            function maxInArray(numbers) <br>{
+              let largest = number [0];<br>
+              for(let i = 0; i < numbers.length; i++)<br> {
+                const index = i;<br>
+                const element = numbers[index];<br>
+                if(element > largest)<br>{
+                  largest = element;
+                }<br>
+              }<br>
+              return largest;
+            }<br>
+            const heights = [167, 190, 130, 176, 189];<br>
+            const tallest = maxInArray( heights);<br>
+            console.log('tallest person is ', tallest);
+            </p>
+           <div class="modal-action">
+             <label for="my-modal-43" class="btn">Got It!</label>
+           </div>
+          </div>
+       </div>
+
+        <!-- p-45 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-44" class="btn">
+        How can you reverse a string , and reverse word in a sentence?
+       </label>
+  
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-44" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box">
+           <p class="py-4 px-4">
+             function reverseString (text)<br>{
+              let reversed = '';<br>
+              for (let i = text.length-1 ; i >= 0 ; i--)<br>{
+                const element = text [i];<br>
+                reversed = reversed + element;<br>
+                console.log(reversed, element);
+              }<br>
+              return reversed;
+             }<br>
+             const myString = 'I am a good girl';<br>
+             const reversed = reverseString(myString);<br>
+             console.log(reversed);<br>
+             2...another way to do this.....<br>
+             function reverseString(string)<br> {
+              const words = str.split(' ');<br>
+              const result = [];<br>
+              for (let i = words.length-1; i >=0 ; i--)<br> {
+                const element = words[i];<br>
+                result.push(element);
+             }<br>
+             return result;
+            }<br>
+            const myString = 'I am a good girl';<br>
+             const reversed = reverseString(myString);<br>
+             console.log(reversed);
+            </p>
+           <div class="modal-action">
+             <label for="my-modal-44" class="btn">Got It!</label>
+           </div>
+          </div>
+       </div>
+
+        <!-- p-46 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-45" class="btn">
+        fibonacci series 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144.
+       </label>
+  
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-45" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box">
+           <p class="py-4 px-4">
+            const fibo = [0, 1];<br>
+            for (let i = 0; i <= 25; i++)<br>{
+              fibo[i] = fibo[i-1] + fibo[i-2];
+            }<br>
+            console.log(fibo);<br>
+            </p>
+           <div class="modal-action">
+             <label for="my-modal-45" class="btn">Got It!</label>
+           </div>
+          </div>
+       </div>
+
+        <!-- p-47 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-46" class="btn">
+       কোন একটা সংখ্যা প্রাইম সংখ্যা (prime number) কিনা। সেটা চেক করার একটা ফাংশন লিখো। 
+       </label>
+  
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-46" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box">
+           <p class="py-4 px-4">
+             for(let i = 0; i <= n-1; i++)<br> {
+              if(n % i == 0)<br>{
+                console.log('not prime');<br>
+                return 0;
+              }<br>
+             }<br>
+             console.log('prime');
+            </p>
+           <div class="modal-action">
+             <label for="my-modal-46" class="btn">Got It!</label>
+           </div>
+          </div>
+       </div>
+
+       <!-- p-48 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-47" class="btn">
+      const name = ['abul', 'dabul', 'babul', 'cabul', 'dabul', 'babul', 'cabul', 'dabul', 'babul', 'cabul', 'dabul', 'babul', 'cabul', 'dabul', 'babul', 'cabul'];avoid same name as a loop.
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-47" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function removeDuplicate(names)<br>{
+              const unique = [];<br>
+              for(let i = 0; i < names.length ; i++)<br>{
+                const name = names[i];<br>
+                if(unique.includes(name) === false)<br>{
+                  unique.push(name);
+                }
+              }<br>
+              return unique;
+             } <br>
+             const uniqueNames = removeDuplicate(names);<br>
+             console.log(uniqueNames);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-47" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-49 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-48" class="btn">
+      input result = 1-50;
+      if the number is divisible by 3 ,then show 'foo';
+      if the number is divisible by 5 ,then show 'bar';
+      if the number is divisible by 3 & 5 ,then show 'foobar';
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-48" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           for(let i=1; 1<= 50; i++)<br>{
+            if(i % 3 === 0 && i % 5 === 0)<br>{
+              console.log('foobar');
+            }<br>
+            else if (i % 3 === 0)<br>{
+              console.log('foo');
+            }<br>
+            else if (i % 5 === 0)<br>{
+              console.log('bar');
+            }<br>
+           }<br> 
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-48" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-50 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-49" class="btn">
+      per items wood requirements.
+      chair --- 3 sqft;
+      table --- 5 sqft;
+      bed --- 10 sqft;
+      verify quqntity;
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-49" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+           function woodCalculatore(chairQuantity, tableQuantity, woodQuantity)<br>{
+            const perChairWood = 3;<br>
+            const perTableWood = 5;<br>
+            const bedWood = 10;<br>
+
+            const chairWood = chairQuantity * perChairWood;<br>
+            const tableWood = tableQuantity * pertableWood;<br>
+            const bedWood = bedQuantity * perbedWood;<br>
+
+            const totalWood = chairWood + tableWood + bedWood;<br>
+            return totalWood;
+            }<br> 
+           const totalWood = woodCalculatore(1, 1, 1);<br>
+           console.log('total Wood required: ', totalWood);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-49" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-51 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-51" class="btn">
+      const phones = [
+      { name:'samsung', camera:12 , storage:'32gb', price:36000, type:'silver'}
+      { name:'oppo', camera:34 , storage:'32gb', price:39000, type:'white'}
+      { name:'huwai', camera:12 , storage:'32gb', price:80000, type:'black'}
+      { name:'hpMini', camera:64 , storage:'32gb', price:67000, type:'silver'}
+      { name:'sony', camera:48 , storage:'32gb', price:23000, type:'pink'}
+      ]
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-51" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function cheapestPhone(phones)<br>{
+              let cheapest = phones[0];<br>
+              for(let i = 0; i < phones.length; i++)<br>{
+                const phone = phones[i];<br>
+                if(phone.price > cheapest.price)<br>{
+                  cheapest = phone;
+                }
+              }<br>
+              return cheapest;
+            }<br>
+            const mySelection = cheapestPhone(phones);<br>
+            console.log(mySelection);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-51" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+
+      <!-- p-53 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-53" class="btn">
+      const shopping = [
+      {name: 'shoe', price: 12000 , quantity: 2}
+      {name: 'waterpot', price: 1000 , quantity: 7}
+      {name: 'box', price: 100 , quantity: 5}
+      {name: 'shoebox', price: 30000 , quantity: 3}
+      ]
+      </label>
+ 
+      <!-- Put this part before </body> tag -->
+      <input type="checkbox" id="my-modal-53" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box">
+          <p class="py-4 px-4">
+            function totalCost (products)<br>{
+              let sum = 0;<br>
+              for (let i = 0; i < products.length; i++)<br>{
+                const product = products[i];<br>
+                const productTotal = product.price * product.quantity;<br>
+                sum = sum + productTotal;
+              }<br>
+              return sum;
+            }<br>
+            const expense = totalCost(shoppingCart);<br>
+            console.log('total expense is :'expense);
+           </p>
+          <div class="modal-action">
+            <label for="my-modal-53" class="btn">Got It!</label>
+          </div>
+         </div>
+      </div>
+
+      <!-- p-54 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-54" class="btn">
+        1..if ticket number is less then 100,ticket rate is 100;
+        2..if ticket number is,more then 100 less then 200,ticket rate is first 100 and second 100 is 90 tk per rate;
+        3..if you purchase more then
+        first 100 --- 100;
+        second 100 --- 90;
+        rest ---- 70;
+      </label>
+   
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-54" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p class="py-4 px-4">
+              function ticketPrice (ticketQuantity)<br>{
+                const first100Rate = 100;<br>
+                const second100Rate = 90;<br>
+                const restTicketRate = 70;<br>
+                
+                if(ticketQuantity <= 100)<br>{
+                  const price = ticketQuantity * first100Rate;<br>
+                  return price;
+                }<br>
+                else if(ticketQuantity <= 200)<br>{
+                  first100Price = 100 * first100Rate;<br>
+                  restTicketQuantity = ticketQuantity - 100;<br>
+                  restTicketPrice = restTicketQuantity * second100Price;<br>
+                  const totalPrice = restTicketPrice + first100Price;<br>
+                  return totalPrice;
+                }<br>
+                else{<br>
+                  first100Price = 100 * first100Rate;<br>
+                  second100Price = 100 * second100Rate;<br>
+                  restTicketQuantity = ticketQuantity - 200;<br>
+                  restTicketPrice = restTicketQuantity * restTicketRate;<br>
+                  const totalCost = first100Price + second100Price + restTicketPrice;<br>
+                  return totalCost;
+                }
+              }<br>
+              const price = ticketPrice (120);<br>
+              console.log (price);
+             </p>
+            <div class="modal-action">
+              <label for="my-modal-54" class="btn">Got It!</label>
+            </div>
+           </div>
+        </div>
+  
+        <!-- p-55 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-55" class="btn">
+       
+        </label>
+   
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-55" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p class="py-4 px-4">
+
+                           </p>
+            <div class="modal-action">
+              <label for="my-modal-55" class="btn">Got It!</label>
+            </div>
+           </div>
+        </div>
+  
+        <!-- p-56 -->
+      <!-- The button to open modal -->
+      <label for="my-modal-56" class="btn">
+       
+        </label>
+   
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-56" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p class="py-4 px-4">
+              
+             </p>
+            <div class="modal-action">
+              <label for="my-modal-56" class="btn">Got It!</label>
+            </div>
+           </div>
+        </div>
+  
+  
+ 
+
+
+
+    </div>
+  </body>
+</html>
